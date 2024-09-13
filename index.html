@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Editable Dynamic Resume Builder</h1>
+    </header>
+
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="profile-picture-url">Profile Picture URL:</label>
+            <input type="url" id="profile-picture-url" name="profile-picture-url">
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" name="education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea id="work-experience" name="work-experience" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <section id="resume">
+        <header id="resume-header">
+            <!-- Resume header will be populated here -->
+        </header>
+        <section id="resume-education">
+            <!-- Education section will be populated here -->
+        </section>
+        <section id="resume-skills">
+            <!-- Skills section will be populated here -->
+        </section>
+        <section id="resume-work-experience">
+            <!-- Work experience section will be populated here -->
+        </section>
+    </section>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
